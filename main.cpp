@@ -38,10 +38,10 @@ int main()
     stringstream ss(str);
     ofstream out("D:/out.txt");
     ifstream del("D:/del.txt");
-    ofstream _del("D:/del2.txt");
+    ofstream _del("D:/delNEW.txt");
     del_conv(del, _del);
     _del.close();
-    ifstream delet("D:/del2.txt");
+    ifstream delet("D:/delNEW.txt");
     while (delet >> str) // удаление стоп слов
     {
         freq.erase(str);
